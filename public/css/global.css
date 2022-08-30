@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #6732d9;
+    --color-secondary: #d9042b;
+
+    --color-background: #0e0e0e;
+    --color-text: rgb(255, 255, 255);
+}
+
+html {
+    position: relative;
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 65.5%;
+}
+
+
+body {
+    background-color: #0e0e0e;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: #F4F4F4;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--background);
+}
+
+.ef-glow {
+    box-shadow: 20px 20px 50px -30px #4048e8;
+    }
+
+.light-blue {
+    position: absolute;
+    width: 680.06px;
+    height: 637px;
+    
+    position: absolute;
+    width: 529.36px;
+    height: 529.36px;
+    left: -0px;
+    top: 0px;
+
+    z-index: -1;
+
+    background: var(--color-primary);
+    opacity: 0.3;
+    filter: blur(200px);
+
+}
+
+
+.light-orange {
+    position: absolute;
+    width: 680.06px;
+    height: 637px;
+    
+    position: absolute;
+    width: 329.36px;
+    height: 329.36px;
+    left: 1500px;
+    top: 900px;
+
+    z-index: -1;
+
+    background: var(--color-secondary);
+    opacity: 1;
+    filter: blur(400px);
+
+}
+
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.button a {
+    color: var(--background-color);
+    font-family: 'PT Sans';
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 0;
+}
+
+.buttons {
+    display: flex;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@500&display=swap');
+
+span, a, h1, h2, h3 {
+    font-family: 'Fira Code', monospace;
+    color: var(--color-text);
+}
+
+p {
+    font-family: monospace;
+    color: var(--color-text);
+    line-height: 2.4rem;
+}
