@@ -7,80 +7,33 @@
 }
 
 :root {
-    --color-primary: #6732d9;
-    --color-secondary: #d9042b;
+    --color-primary:  #465A32;
+    --color-secundary: #CDD0CA;
+    --color-background: #EEECE9;
+    
+    --color-comment: #607B96;
+    --color-link: #FEA55F;
+    --color-name: #6732d9;
+    --color-var: #d9042b;
 
-    --color-background: #0e0e0e;
-    --color-text: rgb(255, 255, 255);
+
+    ---color-text-black: #0e0e0e;
 }
 
+
 html {
-    position: relative;
-    height: 100vh;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-size: 65.5%;
 }
 
-
 body {
-    background-color: #0e0e0e;
-    overflow-x: hidden;
+    background-color: var(--color-background);
+    max-width: min(150rem, 90%);
+    margin: 0 auto
 }
 
-::-webkit-scrollbar-track {
-    background-color: #F4F4F4;
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: #F4F4F4;
-}
-::-webkit-scrollbar-thumb {
-    background: var(--background);
-}
-
-.ef-glow {
-    box-shadow: 20px 20px 50px -30px #4048e8;
-    }
-
-.light-blue {
-    position: absolute;
-    width: 680.06px;
-    height: 637px;
-    
-    position: absolute;
-    width: 529.36px;
-    height: 529.36px;
-    left: -0px;
-    top: 0px;
-
-    z-index: -1;
-
-    background: var(--color-primary);
-    opacity: 0.3;
-    filter: blur(200px);
-
-}
-
-
-.light-orange {
-    position: absolute;
-    width: 680.06px;
-    height: 637px;
-    
-    position: absolute;
-    width: 329.36px;
-    height: 329.36px;
-    left: 1500px;
-    top: 900px;
-
-    z-index: -1;
-
-    background: var(--color-secondary);
-    opacity: 1;
-    filter: blur(400px);
-
-}
-
+/* Esconde uma tag */
 
 .sr-only {
     position: absolute;
@@ -94,34 +47,91 @@ body {
     border-width: 0;
 }
 
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+/* Scroll */
+
+::-webkit-scrollbar-track {
+    background-color: #dadada;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
 }
 
-.button a {
-    color: var(--background-color);
-    font-family: 'PT Sans';
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 0;
+/* MENU */
+#logo {
+    width: 3.5rem;
 }
 
-.buttons {
-    display: flex;
+h1 {
+    font-family: "Fira Code";
+    font-size: 4.2rem;
+    font-weight: 500;
+    color: var(--color-text-black);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@500&display=swap');
-
-span, a, h1, h2, h3 {
-    font-family: 'Fira Code', monospace;
-    color: var(--color-text);
+h2 {
+    font-family: "Fira Code";
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--color-text-black);
 }
 
 p {
-    font-family: monospace;
-    color: var(--color-text);
-    line-height: 2.4rem;
+    font-family: "Fira Code";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    color: var(--color-text-black);
+    letter-spacing: 3px;
+}
+
+span {
+    font-family: "Fira Code";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+    color: var(--color-text-black);
+    letter-spacing: 3px;
+}
+
+.comment {
+    color: var(--color-comment);
+    font-size: 1.2rem;
+}
+
+.var {
+    color: var(--color-var);
+    font-size: 1.2rem;
+
+}
+
+.var-name {
+    color: var(--color-name);
+    font-size: 1.2rem;
+
+}
+
+.link {
+    color: var(--color-link);
+    font-size: 1.2rem;
+    text-decoration: underline var(--color-link);
+}
+
+
+p, span {
+    max-width: 65ch;
+}
+
+button {
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: .8rem;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background: var(---color-text-black);
 }

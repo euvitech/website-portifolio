@@ -1,125 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinicius P.</title>
-    <link rel="stylesheet" href="public/css/main.css">
+    <title>Euvitech</title>
+
+    <link rel="stylesheet" href="/public/css/main.css">
     <link rel="stylesheet" href="public/css/global.css">
+
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
 </head>
 <body>
-    <div class="container">
-        <header>
+    <script src="public/script/main.js"></script>
+    <header>
+            <a id="logo" href="https://www.instagram.com/euvitech/" target="_blank">@Euvitech</a>
             <nav>
-                <a class="logo" href="/"></a>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="/">Portifólio</a></li>
-                    <li><a href="/">Contato</a></li>
+                <ul id="menu">
+                    <li><a href="#shop" class="anchor">_hello</a></li>
+                    <li><a href="#sobre" class="anchor">_sobre</a></li>
+                    <li><a href="#about" class="anchor">_skills</a></li>
+                    <li><a href="#contact-us" class="anchor">_projetos</a></li>
                 </ul>
             </nav>
-        </header>
-    
-        <main id="home">
-            <div class="presentation" >
-                <span>Olá, eu sou</span>
-                <h1>Vinicius Pereira🖐</h1>
-                <p>Estudante universitário esforçado, trazendo uma atitude motivada e uma variedade de habilidades poderosas de gerenciamento de tempo combinadas com conhecimento superior do setor de Desenvolvimento Front-End.
-
-                </p>
+            <div class="contate-header">
+                <a id="magnifier-icon" href="">_contate-me</a>
             </div>
-            <div class="img-profile">
-                <img src="public/assents/img-profile.png" alt="">
-            </div>
+    </header>
 
+    <section>
+        <main>
+            <span>Hi people, I'am</span>
+            <h1>Vinicius Pereira</h1>
+            <h2>> Front-end Developer.</h2>
+
+            <div class="function">
+                <span class="comment">// você também pode ver na minha página do Github</span><br>
+                <span class="var">const</span>
+                <span class="var-name">gitHubLink</span>
+                <span>=</span>
+                <span><a class="link" href="https://github.com/euvitech" target="_blank">"https://github.com/euvitech"</a></span>
+            </div>
         </main>
-        <div class="img-border">
-            <img src="public/assents/img-border.svg" alt="">
-        </div>
 
-        <div class="about" id="about">
-            <div class="img-about">
-
-                    <img src="public/assents/img-profile.png" alt="">
-                    
-            </div>
-
-            <div class="text-about">
-                <h1>Minha Historia☕</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <br>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <div class="content">
+            <div id="background-img">
+                <img src="public/assets/profile-home.png" alt="imagem planta minimalista">
             </div>
         </div>
+    </section>
 
-        <div class="img-border">
-            <img src="public/assents/img-border.svg" alt="">
+    <article id="sobre">
+        <div class="title">
+            <h1>> Sobre</h1>
+            <div class="line"></div>
         </div>
+        <div class="diary">
+            <div class="img-diary">
+                <img src="/public/assets/my-profile-art.svg" alt="imagem do meu diario">
+                <div>
+                    <img src="/public/assets/2.svg" alt="">
+                    <img src="/public/assets/4.svg" alt="">
+                </div>
 
+            </div>
+            <div class="my-code-font">
+                <div>
+                    <div class="function">
+                        <span class="var">function</span>
+                        <span class="var-name">euvitech()</span>
+                        <span>{</span>
+                        </div>
+                            <div class="passion">
+                                <span class="var">var</span>
+                                <span class="var-name">minhaHistoria</span>
+                                <span>=</span>
+                                <p>"Nascido em 2003, nascido no Brasil. Autodidata em codificação, aprendeu design na prática.
+                                    Adoro destilar assuntos altamente complexos em premissas limpas como um simples pensador que duvida. Explorar com minhas mãos e olhos, tocando e examinando o mundo com racionalismo e curiosidades. Eu sou um criador natural, Atualmente, participando como programador Front-end em serviços B2B"</p>
+                            </div>
+
+                        <div class="passion">
+                            <span class="var">var</span>
+                            <span class="var-name">minhaPaixao</span>
+                            <span>=</span>
+                            <p>"Tecnologia, Livros, Essencialismo, Jogos, Automações e Pizza"</p>
+                        </div>
+
+                        <div class="passion">
+                            <span class="var-name">console.log</span>
+                            <p>(minhaHistoria, minhaPaixao)</p>
+                        </div>
+
+                        <span>}</span>
+                        <span class="var-name">euvitech()</span>
+
+                </div>
+            </div>
+        </div>
         <div class="skills">
-            <h1>SKILLS</h1>
-            <div class="cards-service" id="skills">
-                <section class="card contact">
-                    <div class="icon">
-                        <img src="public/assents/rocket.png" alt="Contact us.">
-                    </div>
-                    <h2>Atraia novos clientes</h2>
-                    <p>Otimizando os processos de venda e segmentamos os anúncios online para prováveis clientes que se interessam pelo seu produto ou serviço.</p>
-                </section>
-                <section class="card shop">
-                    <div class="icon">
-                        <img src="public/assents/moeda.png" alt="Shop here.">
-                    </div>
-                    <h2>Site que converte em vendas</h2>
-                    <p>Obtenha site ou landing page que ajuda o seu negócio a vender, além de ter uma página web com design moderno, otimizamos com SEO e copywriting.</p>
-                </section>
-                <section class="card about">
-                    <div class="icon">
-                        <img src="public/assents/girl.png" alt="About us.">
-                    </div>
-                    <h2>Autoridade e presença digital</h2>
-                    <p>Com o aumento de tráfego nas redes sociais do seu negócio, crescerá o fluxo de mensagens, ligações, cliques e visitas na sua empresa.</p>
-                </section>
+            <div class="line"></div>
+            <ul>
+                <li><i class="lab la-html5"></i></li>
+                <li><i class="lab la-css3-alt"></i></li>
+                <li><i class="lab la-js-square"></i></li>
+                <li><i class="lab la-python"></i></li>
+                <li><i class="lab la-react"></i></li>
+                <li><i class="lab la-node-js"></i></li>
+                <li><i class="lab la-bootstrap"></i></li>
+                <li><i class="lab la-linux"></i></li>
+                <li><i class="lab la-git"></i></li>
+                <li><i class="lab la-figma"></i></li>
+            </ul>
+        </div>
+    </article>
 
-                <section class="card about">
-                    <div class="icon">
-                        <img src="public/assents/target.png" alt="About us.">
-                    </div>
-                    <h2>Atendimento Eficiente</h2>
-                    <p>Nosso suporte está disponível para tirar suas dúvidas pelo WhatsApp ou E-mail, não é chatbot, é atendimento personalizado.</p>
-                </section>
-
-                <section class="card about">
-                    <div class="icon">
-                        <img src="public/assents/clock.png" alt="About us.">
-                    </div>
-                    <h2>Mais tempo para gerir seu negócio</h2>
-                    <p>Com a captação de leads, sua equipe de atendimento fica focada somente em fechar a venda, dando mais tempo para você gerir o seu negócio.</p>
-                </section>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <!-- <div class="card">
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
             </div>
         </div>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
 
-    </div>
-        
-    <div class="light-blue"></div>
-    <div class="light-orange"></div>
-    <script src="public/scripts/mais.js"></script>
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+        <div class="card-price">
+            <img src="public/assents/background-florist.png" alt="planta">
+            <div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus in aut veniam nam rem fugit vel odit sequi facere dolorum.</p>
+                <span><strong>R$ 630,00</strong></span>
+                <button>Comprar</button>
+            </div>
+        </div>
+    </div> -->
 </body>
 </html>

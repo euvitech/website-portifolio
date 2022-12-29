@@ -1,45 +1,10 @@
-class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
-      this.mobileMenu = document.querySelector(mobileMenu);
-      this.navList = document.querySelector(navList);
-      this.navLinks = document.querySelectorAll(navLinks);
-      this.activeClass = "active";
-  
-      this.handleClick = this.handleClick.bind(this);
-    }
-  
-    animateLinks() {
-      this.navLinks.forEach((link, index) => {
-        link.style.animation
-          ? (link.style.animation = "")
-          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
-              index / 7 + 0.3
-            }s`);
-      });
-    }
-  
-    handleClick() {
-      this.navList.classList.toggle(this.activeClass);
-      this.mobileMenu.classList.toggle(this.activeClass);
-      this.animateLinks();
-    }
-  
-    addClickEvent() {
-      this.mobileMenu.addEventListener("click", this.handleClick);
-    }
-  
-    init() {
-      if (this.mobileMenu) {
-        this.addClickEvent();
-      }
-      return this;
-    }
-  }
-  
-  const mobileNavbar = new MobileNavbar(
-    ".mobile-menu",
-    ".nav-list",
-    ".nav-list li",
-  );
-  mobileNavbar.init();
-  
+function myCodeFont() {
+
+var myHistory = "Nascido em 2003, criado no Brasil. Autodidata em codificação, aprendeu design na prática. Adoro destilar assuntos altamente complexos em premissas limpas como um simples pensador que duvida. Explorar com minhas mãos e olhos, tocando e examinando o mundo com racionalismo e curiosidades. Eu sou um criador natural, Atualmente, participando como programador Front-end em serviços B2B"
+
+var paixao = "Tecnologia, Livros, Essencialismo, Jogos, Automações e Pizza"
+
+console.log(paixao, myHistory)
+}
+
+myCodeFont()
